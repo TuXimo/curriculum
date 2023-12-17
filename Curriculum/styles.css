@@ -89,19 +89,44 @@ section:last-child {
     margin-bottom: 0;
 }
 
+/* ... Otros estilos ... */
+
 .section-image {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .section-image img {
-    width: 150px;
-    height: 150px;
+    max-width: 100%; /* Hace que la imagen sea responsiva */
+    max-height: 500px; /* Establece la altura máxima según sea necesario */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.education {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.education h3 {
+    text-align: left;
+}
+
+.section-image {
+    margin-top: 20px; /* Ajusta el espacio entre el título y la imagen */
+    text-align: center;
+    flex-grow: 1; /* Hace que este contenedor crezca para llenar el espacio disponible */
+}
+
+.section-image img {
+    max-width: 100%;
+    max-height: 400px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-/* ... Otros estilos ... */
 
 .experience {
     margin-top: 20px;
