@@ -100,3 +100,39 @@ section:last-child {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+/* ... Otros estilos ... */
+
+.experience {
+    margin-top: 20px;
+}
+
+.job-card {
+    background-color: #444;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.job-card h4 {
+    color: #3498db;
+}
+
+.job-card p {
+    margin-bottom: 10px;
+}
+
+.job-card a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.job-card a:hover {
+    color: #e74c3c;
+}
+
+/* ... Resto de estilos ... */
