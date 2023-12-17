@@ -1,8 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
-    background-color: #222;
-    color: #ddd;
+    background-color: #000035;
+    color: #9ab4ff;
 }
 
 header {
@@ -11,8 +11,8 @@ header {
 }
 
 h1, h2, h3 {
-    color: #3498db;
-    border-bottom: 2px solid #3498db;
+    color: #1c4c96;
+    border-bottom: 2px solid #062863;
     padding-bottom: 5px;
 }
 
@@ -25,13 +25,13 @@ p {
 }
 
 a {
-    color: #3498db;
+    color: #607ec9;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #e74c3c;
+    color: #9ab4ff;
 }
 
 ul {
@@ -47,7 +47,7 @@ ul li {
 
 ul li:before {
     content: "\2022"; /* Código Unicode para el punto de viñeta */
-    color: #3498db;
+    color: #1c4c96;
     font-size: 14px;
     margin-right: 5px;
 }
@@ -64,8 +64,8 @@ ul li:before {
 }
 
 .skill-list-item {
-    background-color: #444;
-    color: #ddd;
+    background-color: #062863;
+    color: #9ab4ff;
     padding: 8px 12px;
     margin: 5px 0;
     border-radius: 5px;
@@ -77,7 +77,7 @@ ul li:before {
 /* ... Otros estilos ... */
 
 section {
-    background-color: #333;
+    background-color: #062863;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -133,8 +133,8 @@ section:last-child {
 }
 
 .job-card {
-    background-color: #444;
-    color: #ddd;
+    background-color: #062863;
+    color: #9ab4ff;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -143,7 +143,7 @@ section:last-child {
 }
 
 .job-card h4 {
-    color: #3498db;
+    color: #062863;
 }
 
 .job-card p {
@@ -151,13 +151,13 @@ section:last-child {
 }
 
 .job-card a {
-    color: #3498db;
+    color: #062863;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 .job-card a:hover {
-    color: #e74c3c;
+    color: #607ec9;
 }
 
 /* ... Resto de estilos ... */
