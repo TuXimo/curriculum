@@ -74,15 +74,29 @@ ul li:before {
 }
 
 /* ... Resto de estilos ... */
+/* ... Otros estilos ... */
+
 section {
     background-color: #333;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 section:last-child {
     margin-bottom: 0;
 }
 
+.section-image {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
