@@ -1,6 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
+    background-color: #222;
+    color: #ddd;
 }
 
 header {
@@ -8,12 +10,14 @@ header {
     margin-bottom: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
-h3 {
-    color: #2ecc71;
+h2 {
+    margin-top: 10px;
 }
 
 p {
@@ -23,6 +27,11 @@ p {
 a {
     color: #3498db;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e74c3c;
 }
 
 ul {
@@ -31,5 +40,49 @@ ul {
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    line-height: 1.5;
 }
+
+ul li:before {
+    content: "\2022"; /* Código Unicode para el punto de viñeta */
+    color: #3498db;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* ... Otros estilos ... */
+
+.skills {
+    margin-top: 10px;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list-item {
+    background-color: #444;
+    color: #ddd;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* ... Resto de estilos ... */
+section {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
