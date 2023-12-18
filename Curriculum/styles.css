@@ -1,8 +1,19 @@
+/* Colores */
+:root {
+    --bg-color: #0D1B2A;
+    --sub-bxg: #1B263B;
+    --sub-bxg2: #415A77;
+    --text-color: #f3f5ee;
+    --text-color-2: #b4b6af;
+    --link-color: #6c96c6;
+}
+
+/* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
-    background-color: #000035;
-    color: #9ab4ff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 header {
@@ -11,8 +22,8 @@ header {
 }
 
 h1, h2, h3 {
-    color: #1c4c96;
-    border-bottom: 2px solid #062863;
+    color: var(--text-color-2);
+    border-bottom: 2px solid var(--sub-bg);
     padding-bottom: 5px;
 }
 
@@ -25,13 +36,13 @@ p {
 }
 
 a {
-    color: #607ec9;
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #9ab4ff;
+    color: var(--text-color);
 }
 
 ul {
@@ -46,14 +57,13 @@ ul li {
 }
 
 ul li:before {
-    content: "\2022"; /* Código Unicode para el punto de viñeta */
-    color: #1c4c96;
+    content: "\2022";
+    color: var(--text-color);
     font-size: 14px;
     margin-right: 5px;
 }
 
-/* ... Otros estilos ... */
-
+/* Estilos para habilidades */
 .skills {
     margin-top: 10px;
 }
@@ -64,8 +74,8 @@ ul li:before {
 }
 
 .skill-list-item {
-    background-color: #062863;
-    color: #9ab4ff;
+    background-color: var(--sub-bxg2);
+    color: var(--text-color);
     padding: 8px 12px;
     margin: 5px 0;
     border-radius: 5px;
@@ -73,11 +83,9 @@ ul li:before {
     margin-right: 10px;
 }
 
-/* ... Resto de estilos ... */
-/* ... Otros estilos ... */
-
+/* Estilos para secciones */
 section {
-    background-color: #062863;
+    background-color: var(--sub-bxg);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -89,22 +97,26 @@ section:last-child {
     margin-bottom: 0;
 }
 
-/* ... Otros estilos ... */
-
+/* Estilos para imágenes en secciones */
 .section-image {
     text-align: center;
     margin-top: 20px;
 }
 
 .section-image img {
-    max-width: 100%; /* Hace que la imagen sea responsiva */
-    max-height: 500px; /* Establece la altura máxima según sea necesario */
+    max-width: 100%;
+    max-height: 500px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
     margin: 0 auto;
 }
 
+section h3, section h4{
+    color: var(--text-color);
+}
+
+/* Estilos para educación */
 .education {
     align-items: center;
     justify-content: center;
@@ -115,26 +127,14 @@ section:last-child {
     text-align: left;
 }
 
-.section-image {
-    margin-top: 20px; /* Ajusta el espacio entre el título y la imagen */
-    text-align: center;
-    flex-grow: 1; /* Hace que este contenedor crezca para llenar el espacio disponible */
-}
-
-.section-image img {
-    max-width: 100%;
-    max-height: 400px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
+/* Estilos para experiencia laboral */
 .experience {
     margin-top: 20px;
 }
 
 .job-card {
-    background-color: #062863;
-    color: #9ab4ff;
+    background-color: var(--sub-bxg2);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -142,22 +142,12 @@ section:last-child {
     position: relative;
 }
 
-.job-card h4 {
-    color: #062863;
-}
-
 .job-card p {
     margin-bottom: 10px;
 }
 
 .job-card a {
-    color: #062863;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-
-.job-card a:hover {
-    color: #607ec9;
-}
-
-/* ... Resto de estilos ... */
+/* Otros estilos ... */
