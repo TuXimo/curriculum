@@ -11,7 +11,7 @@
     <header>
         <h1>Máximo Brunetti</h1>
         <h2>Game Developer</h2>
-        <p>Email: <a href="mailto:maxobrunetti@gmail.com">maxobrunetti@gmail.com</a> | Tel: (+54) 261 666 1851 | Age: 22 years</p>
+        <p>Email: <a href="#contact">tuximodev@gmail.com</a> | Tel: (+54) 261 666 1851 | Age: 22 years</p>
         <p>Linkedin: <a href="https://www.linkedin.com/in/maximobrunetti/" target="_blank">www.linkedin.com/in/maximobrunetti</a></p>
     </header>
 
@@ -77,6 +77,22 @@
                 </li>
             </ul>
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h3>Contact</h3>
+        <form id="contact-form" action="https://formspree.io/f/xbjnrode" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit" id="submit-btn">Send Message</button>
+        </form>
     </section>
 </body>
 </html>

@@ -150,4 +150,50 @@ section h3, section h4{
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-/* Otros estilos ... */
+
+/* ... (estilos anteriores) ... */
+
+.contact {
+    background-color: var(--sub-bxg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.contact h3 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.contact label {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: var(--sub-bxg2);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ... Resto de estilos ... */
