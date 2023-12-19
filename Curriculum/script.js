@@ -36,16 +36,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
-
-// language.js
-document.addEventListener("DOMContentLoaded", function() {
-    var url = window.location.href;
-
-    if (url.includes("/es")) {
-        document.documentElement.lang = "es";
-    } else if (url.includes("/en")) {
-        document.documentElement.lang = "en";
-    } else {
-        document.documentElement.lang = "es";
-    }
-});
