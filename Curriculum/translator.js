@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var url = window.location.href;
+
+    if (url.includes("/es")) {
+        document.documentElement.lang = "es";
+    } else if (url.includes("/en")) {
+        document.documentElement.lang = "en";
+    } else {
+        document.documentElement.lang = "en";
+    }
+});
+
+
 const translations = {
     es: {
         'profession-title': 'Desarrollador de Videojuegos',
@@ -49,11 +62,22 @@ const translations = {
     }
 };
 
-let currentLanguage = 'en';
+const lang = new URLSearchParams(window.location.search).get("lang") || "en";
+
+if(lang === 'es' || lang ==='en')
+{
+    currentLanguage = lang;
+}
+
+else
+{
+    currentLanguage = 'en';
+}
 
 function toggleLanguage() {
     currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
     updateLanguageTexts();
+    document.documentElement.lang = currentLanguage;
 }
 
 function updateLanguageTexts() {
@@ -73,6 +97,20 @@ function updateLanguageTexts() {
 
 document.addEventListener("DOMContentLoaded", function() {
     
+    document.documentElement.lang = currentLanguage;
     updateLanguageTexts();
     
+    document.addEventListener("DOMContentLoaded", function() {
+        var url = window.location.href;
+    
+        if (url.includes("/es")) {
+            document.documentElement.lang = "es";
+        } else if (url.includes("/en")) {
+            document.documentElement.lang = "en";
+        } else {
+            document.documentElement.lang = "es";
+        }
+    });
+    
 });
+
