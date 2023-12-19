@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirige /curriculum/es a /curriculum?lang=es
+RewriteRule ^curriculum/es$ /curriculum?lang=es [QSA,L]
+
+# Redirige /curriculum/en a /curriculum?lang=en
+RewriteRule ^curriculum/en$ /curriculum?lang=en [QSA,L]

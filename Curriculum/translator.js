@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var url = window.location.href;
-
-    if (url.includes("/es")) {
-        document.documentElement.lang = "es";
-    } else if (url.includes("/en")) {
-        document.documentElement.lang = "en";
-    } else {
-        document.documentElement.lang = "en";
-    }
-});
-
-
 const translations = {
     es: {
         'profession-title': 'Desarrollador de Videojuegos',
