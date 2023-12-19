@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máximo Brunetti - Game Developer</title>
-    <link rel="stylesheet" type="text/css" href="Curriculum/styles.css">
-    <script src="Curriculum/script.js"></script>
+    <title>Curriculum Maximo Brunetti</title>
+    <script src="curriculum/script.js"></script>
+    <script src="curriculum/translator.js"></script>
+    <link rel="stylesheet" href="curriculum/styles.css">
 </head>
 <body>
     <header>
         <h1>Máximo Brunetti</h1>
-        <h2>Game Developer</h2>
-        <p>Email: <a href="#contact">tuximodev@gmail.com</a> | Tel: (+54) 261 666 1851 | Age: 22 years</p>
+        <h2 data-translate="profession-title">Desarrollador de Videojuegos</h2>
+        <p>Email: <a href="#contact">tuximodev@gmail.com</a> | Tel: (+54) 261 666 1851 | 22 <span data-translate="age">years</span></p>
         <p>Linkedin: <a href="https://www.linkedin.com/in/maximobrunetti/" target="_blank">www.linkedin.com/in/maximobrunetti</a></p>
+        
+        
+        <button id="language-toggle" onclick="toggleLanguage()">Es</button>
     </header>
 
+
+
     <section>
-        <h3>Profile</h3>
-        <p>As a professional game developer, I possess specialized skills in the design, programming, and production of video games. I have in-depth knowledge of technologies and tools used to create high-quality games, especially in Unity.</p>
+        <h3 data-translate="profile">profile</h3>
+        <p data-translate="profile-text">profile text</p>
     </section>
 
     <section>
-        <h3>Skills</h3>
+        <h3 data-translate="skills-title">Skills</h3>
         <div class="skills">
             <ul class="skill-list">
                 <li class="skill-list-item">C#</li>
@@ -35,42 +41,43 @@
                 <li class="skill-list-item">Visual Code</li>
             </ul>
         </div>
-        <p>English Proficiency: Intermediate</p>
-        <p>Solid knowledge of programming best practices such as SOLID, Clean Code, and refactoring.</p>
+        <p data-translate="englishlevel">english text</p>
+        <p data-translate="programmingpractices">programming text</p>
     </section>
 
-    <section class="education">
-        
+    <section class="education">        
         <div>
-            <h3>Education</h3>
-            <p><strong>Technical Degree in Game Development</strong></p>
-            <p><a href="https://um.edu.ar/carreras/tecnicatura-en-desarrollo-de-videojuegos/" target="_blank">University of Mendoza</a> (March 2020 - March 2023)</p>
+            <h3 data-translate="education-title">education</h3>
+            <p><strong data-translate="education-degree">degree</strong></p>
+            <p>
+                <a data-translate="education-university" href="https://um.edu.ar/carreras/tecnicatura-en-desarrollo-de-videojuegos/" target="_blank">university</a> 
+                <span data-translate="education-duration">duration</span> 
+            </p>
         </div>
 
         <div class="section-image">
-            <img src="Curriculum/curriculum.png" alt="">
+            <img src="curriculum/degree.png">
         </div>
     </section>
 
     <section class="experience">
-        <h3>Experience</h3>
+        <h3 data-translate="experience-title">xp</h3>
     
-        <div class="job-card">
-            <h4>Game Programmer</h4>
-            <p>My responsibility in this role was to program the main actions of the video game.</p>
-            <p><strong>GAMAN BIT - Temporary Contract</strong></p>
-            <p>(December 2022 - February 2023)</p>
-            <p>Project: <a href="https://tuximo.itch.io/tightropewalker" target="_blank">Tightrope Walker</a></p>
-        </div>  
+        <div class="experience-card">
+            <h4 data-translate="firtsjob-title">job</h4>
+            <p data-translate="firtsjob-work">work</p>
+            <p data-translate="firtsjob-name"><strong>name</strong></p>
+            <p data-translate="firtsjob-duration">duration</p>
+        </div>
     
-        <div class="job-card">
-            <h4>Proyectos de Universidad:</h4>
+        <div class="experience-card">
+            <h4 data-translate="university-projects">university projects title</h4>
             <ul>
                 <li><a href="https://tuximo.itch.io/proyectounrealgrupo3" target="_blank">Unreal Project Group 3</a></li>
                 <li><a href="https://tuximo.itch.io/school-earthquake-quiz" target="_blank">School Earthquake Quiz</a></li>
             </ul>
             
-            <h4>University Thesis:</h4>
+            <h4 data-translate="university-thesis">university thesis</h4>
             <ul>
                 <li>
                     <a href="https://tuximo.itch.io/tightropewalker" target="_blank">Tightrope Walker</a>
@@ -80,18 +87,18 @@
     </section>
 
     <section class="contact" id="contact">
-        <h3>Contact</h3>
+        <h3 data-translate="contact-title">contact</h3>
         <form id="contact-form" action="https://formspree.io/f/xbjnrode" method="POST">
-            <label for="name">Name:</label>
+            <label data-translate="contact-name" for="name">name</label>
             <input type="text" id="name" name="name" required>
     
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
     
-            <label for="message">Message:</label>
+            <label data-translate="contact-message" for="message">message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
     
-            <button type="submit" id="submit-btn">Send Message</button>
+            <button data-translate="contact-send" type="submit" id="submit-btn">send message</button>
         </form>
     </section>
 </body>

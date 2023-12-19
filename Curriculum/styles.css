@@ -132,7 +132,7 @@ section h3, section h4{
     margin-top: 20px;
 }
 
-.job-card {
+.experience-card {
     background-color: var(--sub-bxg2);
     color: var(--text-color);
     padding: 20px;
@@ -196,4 +196,21 @@ section h3, section h4{
     margin-top: 10px;
 }
 
-/* ... Resto de estilos ... */
+#language-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#language-toggle {
+    background-color: var(--sub-bxg2);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s;
+}
