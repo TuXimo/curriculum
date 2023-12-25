@@ -8,13 +8,14 @@
     <title>Curriculum Maximo Brunetti</title>
     <script src="curriculum/script.js"></script>
     <script src="curriculum/translator.js"></script>
+    <script src="curriculum/age.js"></script>
     <link rel="stylesheet" href="curriculum/styles.css">
 </head>
-<body>
+<body onload="calcularEdad()">
     <header>
         <h1>Máximo Brunetti</h1>
         <h2 data-translate="profession-title">Desarrollador de Videojuegos</h2>
-        <p>Email: <a href="#contact">tuximodev@gmail.com</a> | Tel: (+54) 261 666 1851 | 22 <span data-translate="age">years</span></p>
+        <p>Email: <a href="#contact">tuximodev@gmail.com</a> | Tel: (+54) 261 666 1851 | <span id="age">22</span> <span data-translate="age">years</span></p>
         <p>Linkedin: <a href="https://www.linkedin.com/in/maximobrunetti/" target="_blank">www.linkedin.com/in/maximobrunetti</a></p>
         
         
